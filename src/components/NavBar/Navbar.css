@@ -1,0 +1,80 @@
+.navbar {
+  background-color: #452b6d;
+  width: 250px;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  overflow-y: hidden;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align logo within its container */
+  padding-left: 20px; /* Push logo to the left */
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Spacing between links */
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+  gap: 10px; /* Space between icon and text */
+  padding: 10px 15px; /* Add padding inside the hover box */
+  border-radius: 8px; /* Rounded corners for the hover effect */
+  width: 80%;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-links li:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #000000; /* Change text color */
+  width: 80%; /* Expand the hover box */
+}
+
+.nav-links li:hover a {
+  color: #452b6d; /* Change link text color on hover */
+}
+
+.nav-links li:hover .fa-icon {
+  color: #452b6d; /* Change icon color on hover */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+}
+
+.nav-links a:hover {
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-links li .fa-icon {
+  color: #ffffff; /* Default icon color */
+  font-size: 1.2rem;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
