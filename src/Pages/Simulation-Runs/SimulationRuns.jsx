@@ -3,18 +3,23 @@ import SideNavBar from "../../Components/Side-Bar-Nav/SideNavBar";
 import "./SimuationRuns.css";
 import MainLayout from "../../Components/Simulation Runs/MainLayout";
 import { Box } from "@mui/material";
-import DataTable from "../../Components/Simulation Runs/Table Section/DataTable";
 import TableSection from "../../Components/Simulation Runs/Table Section/TableSection";
+import ImageSection from "../../Components/Simulation Runs/Image Section/ImageSection";
+import { createTheme } from "@mui/material/styles";
+
 export default function SimulationRuns() {
   return (
     <Box
       sx={{
-        height: "100vh",
+        height: { xs: "auto", lg: "100vh" },
         display: "flex",
       }}
     >
       <SideNavBar />
-      <MainLayout Children={<TableSection />}></MainLayout>
+      <MainLayout>
+        <TableSection />
+        <ImageSection />
+      </MainLayout>
     </Box>
   );
 }

@@ -10,19 +10,19 @@ import Paper from "@mui/material/Paper";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: "#0C0918",
     color: theme.palette.common.white,
+    fontSize: "1rem",
     fontWeight: "bold",
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: "1rem",
   },
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(even)": {
-    backgroundColor: "#C4AEE5",
-    color: "white",
+    backgroundColor: "#0C0918",
   },
   // hide last border
   "&:last-child td, &:last-child th": {
@@ -30,6 +30,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
   "&:hover": {
     backgroundColor: "#9EBEE1 !important",
+  },
+  "&:nth-of-type(even) th, &:nth-of-type(even) td": {
+    color: "white",
   },
 }));
 
@@ -53,10 +56,14 @@ export default function DataTable() {
       sx={{
         border: 4,
         borderColor: "white",
-        maxWidth: 300,
+        maxWidth: 500,
+        width: { xs: 300, md: 350, lg: 400 },
       }}
     >
-      <Table sx={{ maxWidth: 300 }} aria-label="customized table">
+      <Table
+        sx={{ width: "100%", maxWidth: 500 }}
+        aria-label="customized table"
+      >
         <TableHead>
           <TableRow>
             <StyledTableCell>Fields</StyledTableCell>
