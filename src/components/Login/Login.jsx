@@ -1,6 +1,9 @@
+
+import styles from "./Login/"
+
 const Login = ()=>{
     return(
-        <div>
+        <div class="login-form-container">
             <h1>Create account</h1>
             <form>
                 <input type="email" placeholder="Enter your email"></input>
