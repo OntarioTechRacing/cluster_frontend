@@ -1,0 +1,29 @@
+
+.forceResults-layout{
+    display:flex;
+}
+
+
+.force-results-content{
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 500px;
+    
+    
+}
+
+.row{
+    display:flex;
+}
+
+.force-results-layout{
+    background-color: #D9D9D9;
+    height: 700px;
+    width: 500px;
+    border-radius:10px;
+}
+
+.force-results-container{
+    display:flex;
+    margin: 20px;
+}
