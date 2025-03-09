@@ -1,0 +1,24 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  height: auto;
+  border: none;
+  background-color: #452b6d;
+}
+.Otrlogo {
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.NavMenu {
+  list-style: none;
+  font-size: 1rem;
+  color: black;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+li {
+  margin-bottom: 10px;
+}

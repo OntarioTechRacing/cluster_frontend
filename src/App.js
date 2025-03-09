@@ -1,11 +1,15 @@
-import "./App.css";
-import Hero from "./components/Hero/Hero.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SimulationRuns from "./Pages/Simulation-Runs/SimulationRuns";
+import Hero from "./Components/Hero/Hero.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/simulation-runs" element={<SimulationRuns />} />
+        <Route path="/" element={<Hero />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
