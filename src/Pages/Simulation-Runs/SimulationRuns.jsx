@@ -1,9 +1,9 @@
 import React from "react";
-import SideNavBar from "../../Components/Side-Bar-Nav/SideNavBar";
 import MainLayout from "../../Components/Simulation Runs/MainLayout";
 import { Box } from "@mui/material";
 import TableSection from "../../Components/Simulation Runs/Table Section/TableSection";
 import ImageSection from "../../Components/Simulation Runs/Image Section/ImageSection";
+import Navbar from "../../Components/NavBar/Navbar";
 
 export default function SimulationRuns() {
   return (
@@ -13,7 +13,7 @@ export default function SimulationRuns() {
         display: "flex",
       }}
     >
-      <SideNavBar />
+      <Navbar />
       <MainLayout>
         <TableSection />
         <ImageSection />
