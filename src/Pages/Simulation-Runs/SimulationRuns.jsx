@@ -1,11 +1,9 @@
 import React from "react";
 import SideNavBar from "../../Components/Side-Bar-Nav/SideNavBar";
-import "./SimuationRuns.css";
 import MainLayout from "../../Components/Simulation Runs/MainLayout";
 import { Box } from "@mui/material";
 import TableSection from "../../Components/Simulation Runs/Table Section/TableSection";
 import ImageSection from "../../Components/Simulation Runs/Image Section/ImageSection";
-import { createTheme } from "@mui/material/styles";
 
 export default function SimulationRuns() {
   return (

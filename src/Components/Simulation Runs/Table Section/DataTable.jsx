@@ -29,7 +29,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     border: 0,
   },
   "&:hover": {
-    backgroundColor: "#9EBEE1 !important",
+    backgroundColor: "#1C0333 !important",
+    // opacity: "0.8 !important",
   },
   "&:nth-of-type(even) th, &:nth-of-type(even) td": {
     color: "white",
