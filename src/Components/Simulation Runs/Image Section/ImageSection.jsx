@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import DropDown from "../DropDown";
+import DropDown from "../../DropDown";
 import SimulationImage from "./SimulationImage";
 export default function ImageSection() {
   return (

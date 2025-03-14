@@ -34,25 +34,27 @@ export default function DropDown() {
       <FormControl
         sx={{
           minWidth: 120,
-          marginTop: 3,
+          marginTop: 2,
         }}
       >
         <InputLabel
-          id="demo-simple-select-label"
+          id="simple-select-label"
           sx={{
             color: "white",
+            mt: 1,
           }}
         >
           Data
         </InputLabel>
         <CustomSelect
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          labelId="simple-select-label"
+          id="simple-select"
           value={data}
-          label="Select Unit"
+          label="Data"
           onChange={handleChange}
           sx={{
             color: "white",
+            mt: 1,
           }}
         >
           <MenuItem value={10}>N</MenuItem>

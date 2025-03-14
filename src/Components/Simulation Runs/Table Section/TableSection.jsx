@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import React from "react";
 import DataTable from "./DataTable";
-import DropDown from "../DropDown";
+import DropDown from "../../DropDown";
 
 export default function TableSection() {
   return (
