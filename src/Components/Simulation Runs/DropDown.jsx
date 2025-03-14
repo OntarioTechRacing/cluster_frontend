@@ -5,30 +5,30 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import styled from "styled-components";
-
+const CustomSelect = styled(Select)(() => ({
+  width: 250,
+  "& .MuiSvgIcon-root": {
+    color: "purple",
+  },
+  "&.MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "#9EBEE1",
+    },
+    "&:hover fieldset": {
+      borderColor: "yellow",
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "#C4AEE5",
+    },
+  },
+}));
 export default function DropDown() {
   const [data, setData] = React.useState("");
 
   const handleChange = (event) => {
     setData(event.target.value);
   };
-  const CustomSelect = styled(Select)(() => ({
-    width: 250,
-    "& .MuiSvgIcon-root": {
-      color: "purple",
-    },
-    "&.MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "#9EBEE1",
-      },
-      "&:hover fieldset": {
-        borderColor: "yellow",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#C4AEE5",
-      },
-    },
-  }));
+
   return (
     <Box>
       <FormControl
