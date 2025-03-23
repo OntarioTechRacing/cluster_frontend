@@ -1,0 +1,127 @@
+/* FileUpload.css */
+.file-upload-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* White upload box styles */
+  .upload-dropzone.white-box {
+    background: #ffffff;
+    border: 2px dashed #cccccc;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-dropzone.white-box:hover {
+    border-color: #593b8b;
+    background-color: #f8f9fa;
+  }
+  
+  .drop-text {
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .import-text {
+    color: #666666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .source-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .source-button {
+    background: #593b8b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .source-button:hover {
+    background: #6d4ca5;
+    transform: translateY(-1px);
+  }
+  
+  /* Status Table */
+  .status-table-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .status-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .status-table th {
+    background: #f8f9fa;
+    color: #333333;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #eeeeee;
+  }
+  
+  .status-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+    color: #444444;
+  }
+  
+  /* Status badges */
+  .status-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.completed {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .status-badge.running {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+  
+  .status-badge.incomplete {
+    background: #ffebee;
+    color: #c62828;
+  }
+  
+  /* Progress bar */
+  .progress-bar-bg {
+    background: #eeeeee;
+    height: 8px;
+    border-radius: 4px;
+    width: 120px;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: #593b8b;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    margin-left: 10px;
+    color: #666666;
+    font-size: 0.9rem;
+  }
