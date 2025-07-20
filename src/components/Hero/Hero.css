@@ -6,9 +6,9 @@
 .hero-content {
   flex: 1; /* Take the remaining space */
   padding: 20px;
-  color: #ffffff;
+  color: white;
   font-family: "Jost", sans-serif;
-  background-color: #000000;
+  background-color: white;
   overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
@@ -31,7 +31,7 @@
 }
 
 .hero-buttons button {
-  background-color: #593b8b;
+  background-color: #3968A6;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -44,36 +44,9 @@
 }
 
 .hero-buttons button:hover {
-  background-color: #6d4ca5;
+  background-color: #2f568a;
 }
 
-.notifications {
-  margin-bottom: 20px;
-  margin-left: 50px;
-}
-
-.notifications h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.notifications ul {
-  list-style: none;
-  padding: 0;
-  color: #ffffff;
-  font-size: 0.9rem;
-}
-
-.notifications ul li {
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
 
 .overview {
   display: flex;
@@ -84,15 +57,17 @@
 .overview-title {
   text-align: left;
   margin: 5px 10px;
+  color: #3968A6;
 }
 
-.headerLinks-list {
+/* .headerLinks-list {
   display: flex;
   gap: 20px;
-}
+} */
 
 .status-header {
   text-align: left;
+  color: #3968A6;
 }
 
 a {
@@ -105,16 +80,16 @@ a:hover {
 }
 
 .hr-element {
-  border: 1.5px solid #452b6d;
+  border: 1.5px solid #3968A6;
 }
 
-.headerLinks-list li {
+/* .headerLinks-list li {
   list-style: none;
   font-size: 16px;
-}
+} */
 
 .overview-item {
-  background-color: #452b6d;
+  background-color: #3968A6;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -124,7 +99,14 @@ a:hover {
 }
 
 .hero-user {
-  margin-left: 50px;
+  background-color: #3968A6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 10px 10px;
+  border-radius: 10px;
+  /* margin: 0; */
+  display: inline-block;
 }
 
 .overview-item h3 {
@@ -158,10 +140,11 @@ a:hover {
 .tabs {
   display: flex;
   margin-bottom: 20px;
+  color: ;
 }
 
 .tabs button {
-  background-color: #593b8b;
+  background-color: #3968A6;
   color: #ffffff;
   border: none;
   padding: 10px 15px;
@@ -176,11 +159,11 @@ a:hover {
 
 .tabs .active-tab {
   background-color: #ffffff;
-  color: #452b6d;
+  color: #3968A6;
 }
 
 .simulations {
-  background-color: #452b6d;
+  background-color: #3968A6;
   border-radius: 10px;
   border: 2px solid #ffffff;
   margin-bottom: 20px;
@@ -188,7 +171,7 @@ a:hover {
 }
 
 .simulation {
-  background-color: #452b6d;
+  background-color: #3968A6;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -203,7 +186,7 @@ a:hover {
   font-size: 0.9rem;
   margin-bottom: 10px;
   margin-top: 0;
-  color: #c2b8e5;
+  color: #ffffff;
 }
 
 .new-simulation-btn {

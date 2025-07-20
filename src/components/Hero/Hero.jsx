@@ -27,8 +27,8 @@ const Hero = () => {
       <Navbar />
       {/* Hero Content */}
       <div className="hero-content">
-        <div className="headerLinks">
-          <ul className="headerLinks-list">
+        {/* <div className="headerLinks"> */}
+          {/* <ul className="headerLinks-list">
             <li>
               <a href="./">Home</a>
             </li>
@@ -41,41 +41,19 @@ const Hero = () => {
             <li>
               <a href="./">Simulation Comparisons</a>
             </li>
-          </ul>
-          <hr className="hr-element" />
-        </div>
+          </ul> */}
+          {/* <hr className="hr-element" /> */}
+        {/* </div> */}
         <div className="hero-header">
           <h1 className="hero-user">Welcome, User</h1>
           <div className="hero-buttons">
             <button className="profile-btn">
               <FontAwesomeIcon icon={faUser} /> Profile
             </button>
-            <button className="info-btn">
+            {/* <button className="info-btn">
               <FontAwesomeIcon icon={faCircleInfo} /> Information
-            </button>
+            </button> */}
           </div>
-        </div>
-        <div className="notifications">
-          <h3>
-            <FontAwesomeIcon icon={faBell} /> New Notifications
-          </h3>
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={faCircle} /> Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent viverra.
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircle} /> Lorem ipsum dolor sit amet,
-              consectetur.
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircle} /> Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCircle} /> 5+ more...
-            </li>
-          </ul>
         </div>
         <h1 className="overview-title">Overview</h1>
         <div className="overview">
