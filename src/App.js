@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Hero />}></Route>
-          <Route path = "forceResults" element={<ForceResults />}></Route>
+          <Route path = "/force-results" element={<ForceResults />}/>
         </Routes>
         </BrowserRouter>
     </div>

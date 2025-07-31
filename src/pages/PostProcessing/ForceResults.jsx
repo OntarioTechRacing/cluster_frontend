@@ -14,6 +14,7 @@ import {
 
 const ForceResults = () => {
 
+    /* Define Backend States */
     const [dragForce, setDragForce] = useState(0)
     const [liftForce, setLiftForce] = useState(0)
     const [axialForce, setAxialForce]= useState(0)
@@ -21,45 +22,76 @@ const ForceResults = () => {
         <div className="forceResults-layout">
             <Navbar />
 
-            {/* <div className="headerLinks">
-                <ul className="headerLinks-list">
-                    <li>
-                    <a href="./">Home</a>
-                    </li>
-                    <li>
-                    <a href="./">Simulation Runs</a>
-                    </li>
-                    <li>
-                    <a href="#">Force Results</a>
-                    </li>
-                    <li>
-                    <a href="./">Simulation Comparisons</a>
-                    </li>
-                </ul>
-                <hr className="hr-element" />
-            </div> */}
+           <div>
+            <h1>JOB CONTEXT</h1>
 
-            <div className="force-results-content">
-                <h1>Force Results Parameter</h1>
-                <h3>Drag Force {dragForce}</h3>
-                <h3>Lift Force {liftForce}</h3>
-                <h3>Axial Force {axialForce}</h3>
+            <div>
+
+            </div>
+           </div>
+
+            <div className="forceResults-header">
+            <h1>STIMULATION OUTPUT SUMMARY</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>RUN DATA</th>
+                            <th>VALUE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Final Residual (U)</td>
+                            <td>0.52 (avg), 0.91 (max)</td>
+                        </tr>
+                        <tr>
+                            <td>Final Residual (P)</td>
+                            <td>2.4e-5</td>
+                        </tr>
+                        <tr>
+                            <td>Time Steps</td>
+                            <td>9.2e6</td>
+                        </tr>
+                         <tr>
+                            <td>Run Steps</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div className="row">
-                <div className="force-results-layout">
-                    <h1>Force Results</h1>
-                    <div className="force-results-container">
-                        <h4>Time</h4>
-                        <h4>Drag Force</h4>
-                        <h4>Lift Force</h4>
-                    </div>
-                </div>
 
-                <div>
-
-                </div>
+           <div>
+            <h1>STIMULATION HEALTH SUMMARY</h1>
+            <div className="stimulationHealthSummaries-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>RUN DATA</th>
+                            <th>VALUE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Final Residual (U)</td>
+                            <td>0.52 (avg), 0.91 (max)</td>
+                        </tr>
+                        <tr>
+                            <td>Final Residual (P)</td>
+                            <td>2.4e-5</td>
+                        </tr>
+                        <tr>
+                            <td>Time Steps</td>
+                            <td>9.2e6</td>
+                        </tr>
+                         <tr>
+                            <td>Run Steps</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+           </div>
         </div>
     )
 }

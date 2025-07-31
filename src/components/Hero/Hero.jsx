@@ -13,6 +13,9 @@ import {
   faCircleCheck,
   faPieChart,
 } from "@fortawesome/free-solid-svg-icons";
+import ForceResults from "../../pages/PostProcessing/ForceResults.jsx";
+
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [activeTab, setActiveTab] = useState("Active Simulations");
@@ -36,7 +39,7 @@ const Hero = () => {
               <a href="./">Simulation Runs</a>
             </li>
             <li>
-              <a href="./">Force Results</a>
+              <Link to="/force-results">Force Results</Link>
             </li>
             <li>
               <a href="./">Simulation Comparisons</a>
