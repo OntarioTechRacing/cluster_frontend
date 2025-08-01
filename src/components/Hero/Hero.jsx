@@ -13,7 +13,6 @@ import {
   faCircleCheck,
   faPieChart,
 } from "@fortawesome/free-solid-svg-icons";
-import ForceResults from "../../pages/PostProcessing/ForceResults.jsx";
 
 import { Link } from "react-router-dom";
 

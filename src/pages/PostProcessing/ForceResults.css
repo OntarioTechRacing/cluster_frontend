@@ -1,29 +1,148 @@
-
-.forceResults-layout{
-    display:flex;
+html, body{
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
+.forceResults-layout {
+    display:flex;
+    background-color: #ffffff
+}
 
 .force-results-content{
     background-color: #D9D9D9;
     height: 400px;
     width: 500px;
-    
-    
 }
 
-.row{
+.forceResults-body-container {
+    display:grid;
+    margin: 0 auto
+}
+
+.row {
     display:flex;
 }
 
-.force-results-layout{
-    background-color: #D9D9D9;
-    height: 700px;
-    width: 500px;
-    border-radius:10px;
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    
+}
+
+.table {
+    width: 100%;
+    min-width: 600px; 
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    background-color: white;
+    border-collapse: seperate; 
+    border-radius:20px;
+    border-spacing: 0;
+
+}
+
+
+.table thead tr {
+    background-color: #3968A6;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px
+}
+
+.forceResults-table {
+    margin: 0 auto;
+    border-radius: 30px;
+    height: 100%;
+    width: 80%;
+}
+
+.table th, .table td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #000000;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background-color: #3968A6;
+    opacity: 0.7;
+    border: 1px solid black;
+}
+
+table tbody {
+    border: 1px solid black;
+}
+
+.table-headings {
+    background-color: #3968A6;
+    opacity: 0.7;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
 }
 
 .force-results-container{
     display:flex;
     margin: 20px;
+}
+
+.job-context {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px
+}
+
+.job-context-container {
+    width: 400px;
+    height: 180px;
+    background-color: #3968A6;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.job-context-container:hover {
+    background-color: #3968A6;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.top-navigation-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end
+}
+
+.top-nav-links-container {
+    display:flex;
+    gap: 30px;
+}
+
+.profile-container {
+    display:flex;
+}
+
+.profile-btn{
+    background-color: #3968A6;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
 }

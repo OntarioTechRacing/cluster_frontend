@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #452b6d;
+  background-color: #3968A6;
   width: 250px;
   height: 100vh;
   color: #ffffff;
@@ -50,11 +50,11 @@
 }
 
 .nav-links li:hover a {
-  color: #452b6d; /* Change link text color on hover */
+  color: #3968A6; /* Change link text color on hover */
 }
 
 .nav-links li:hover .fa-icon {
-  color: #452b6d; /* Change icon color on hover */
+  color: #3968A6; /* Change icon color on hover */
 }
 
 .nav-links a {
