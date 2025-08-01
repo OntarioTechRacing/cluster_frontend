@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import Navbar from "../NavBar/Navbar.jsx"; // Ensure this path is correct
+import Navbar from "../NavBar/Navbar.jsx"; 
 import "./Hero.css";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
 import Simulation from "../Simulation/Simulation.jsx";

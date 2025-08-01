@@ -1,7 +1,7 @@
 .navbar {
   background-color: #3968A6;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
 
 .logo {
   display: flex;
-  align-items: center; /* Align logo within its container */
-  padding-left: 20px; /* Push logo to the left */
+  align-items: center; 
+  padding-left: 20px;
   margin-bottom: 30px;
 }
 
@@ -35,26 +35,26 @@
 
 .nav-links li {
   display: flex;
-  align-items: center; /* Center icon and text vertically */
-  gap: 10px; /* Space between icon and text */
-  padding: 10px 15px; /* Add padding inside the hover box */
-  border-radius: 8px; /* Rounded corners for the hover effect */
+  align-items: center; 
+  gap: 10px; 
+  padding: 10px 15px; 
+  border-radius: 8px; 
   width: 80%;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease; 
 }
 
 .nav-links li:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #000000; /* Change text color */
-  width: 80%; /* Expand the hover box */
+  background-color: #ffffff; 
+  color: #000000; 
+  width: 80%; 
 }
 
 .nav-links li:hover a {
-  color: #3968A6; /* Change link text color on hover */
+  color: #3968A6;
 }
 
 .nav-links li:hover .fa-icon {
-  color: #3968A6; /* Change icon color on hover */
+  color: #3968A6;
 }
 
 .nav-links a {
@@ -64,11 +64,11 @@
 }
 
 .nav-links a:hover {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
 }
 
 .nav-links li .fa-icon {
-  color: #ffffff; /* Default icon color */
+  color: #ffffff; 
   font-size: 1.2rem;
 }
 

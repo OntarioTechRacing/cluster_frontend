@@ -42,9 +42,7 @@ html, body{
     border-collapse: seperate; 
     border-radius:20px;
     border-spacing: 0;
-
 }
-
 
 .table thead tr {
     background-color: #3968A6;
@@ -55,13 +53,13 @@ html, body{
 
 .forceResults-table {
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 20px;
     height: 100%;
     width: 80%;
 }
 
 .table th, .table td {
-    padding: 14px 18px;
+    padding: 10px 18px;
     text-align: left;
     font-size: 0.95rem;
     border-bottom: 1px solid #000000;
@@ -84,6 +82,7 @@ table tbody {
 .table-headings {
     background-color: #3968A6;
     opacity: 0.7;
+    border-radius:20px;
 }
 
 .table tbody tr:hover {
@@ -99,14 +98,17 @@ table tbody {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 0;
-    gap: 20px
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow: visible;
 }
 
 .job-context-container {
-    width: 400px;
-    height: 180px;
+    position: relative;
+    width: 300px;
+    height: 140px;
     background-color: #3968A6;
+    opacity: 0.8;
     border-radius: 20px;
     color: rgb(0, 0, 0);
     display: flex;
@@ -115,23 +117,48 @@ table tbody {
     align-items: center;
     text-align: center;
     transition: background-color 0.3s ease;
+    padding: 2rem 1rem 1rem 1rem; 
+    overflow: visible;
 }
 
 .job-context-container:hover {
     background-color: #3968A6;
-    opacity: 0.8;
+    opacity: 0.7;
     cursor: default;
+    display:flex;
+}
+
+.job-context-icon{
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1;
 }
 
 .top-navigation-container{
     display:flex;
     justify-content: space-between;
-    align-items:flex-end
+    align-items:flex-end;
+    position: relative;
+
 }
 
 .top-nav-links-container {
     display:flex;
     gap: 30px;
+    justify-content: flex-start;
+    align-items:flex-start;
+    position:relative;
 }
 
 .profile-container {
@@ -145,4 +172,21 @@ table tbody {
     border-radius: 20px;
     color: white;
     font-size: 1.1rem;
+}
+
+.nav-item {
+    position:relative;
+    cursor: pointer;
+}
+
+.nav-item:hover::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 6px;
+  background-color:#3968A6;
+  border-radius: 4px;
+  opacity: 0.8;
 }

@@ -1,6 +1,9 @@
 // import {useState} from "react"
 import "./ForceResults.css"
 import Navbar from "../../components/NavBar/Navbar.jsx"; // Ensure this path is correct
+import Calendar from "../../assets/calendar.png";
+import Clock from "../../assets/clock.png";
+import Folder from "../../assets/folder.png";
 
 const ForceResults = () => {
 
@@ -21,8 +24,14 @@ const ForceResults = () => {
 
         <div className="top-navigation-container">
             <div className="top-nav-links-container">
-                <h2>Simulation Runs</h2>
-                <h2>Simulation Comparisons</h2>
+                <h2 className="nav-item">
+                    {/* <link to="/">Simulation Runs</link> */}
+                    Simulation Runs
+                </h2>
+                <h2 className="nav-item">
+                    {/* <link to="/">Simulation Comparisons</link> */}
+                    Simulation Comparisons
+                    </h2>
             </div>
 
             { /* ---- Link to Profile Button ---- */}
@@ -36,17 +45,29 @@ const ForceResults = () => {
         <h1>JOB CONTEXT</h1>
         <div className="force-results-container">
             <div className="job-context">
+                
                 <div className="job-context-container">
+                    <div className="job-context-icon">
+                        <img src={Folder} alt="Folder Icon" width="30px"/>
+                    </div>
                     <h2>Job Name</h2>
                     <h3>Rear wing</h3>
                 </div>
 
                 <div className="job-context-container">
+                    <div className="job-context-icon">
+                        <img src={Calendar} alt="Calendar Icon" width="30px"/>
+                    </div>
+
                     <h2>Date run</h2>
                     <h3>June 20, 2025 </h3>
                 </div>
 
                 <div className="job-context-container">
+                    <div className="job-context-icon">
+                        <img src={Clock} alt="Clock Icon" width="30px"/>
+                    </div>
+
                     <h2>Stimulation Run Time</h2>
                     <h3>8 hours, 16 mins</h3>
                 </div>
@@ -92,9 +113,8 @@ const ForceResults = () => {
         </div>
 
         { /* ---- Simulation Output Summary ---- */}
-            <div>
+            <div className="forceResults-table">
                 <h1>STIMULATION HEALTH SUMMARY</h1>
-                    <div className="forceResults-table">
                     <div className="table-wrapper">
 
                     <table className="table">
@@ -126,7 +146,6 @@ const ForceResults = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
