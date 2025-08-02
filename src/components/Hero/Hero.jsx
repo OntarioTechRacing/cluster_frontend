@@ -2,7 +2,6 @@ import { React, useState } from "react";
 import Navbar from "../NavBar/Navbar.jsx"; // Ensure this path is correct
 import "./Hero.css";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
-import Simulation from "../Simulation/Simulation.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -13,6 +12,7 @@ import {
   faCircleCheck,
   faPieChart,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [activeTab, setActiveTab] = useState("Active Simulations");
@@ -39,7 +39,7 @@ const Hero = () => {
               <a href="./">Force Results</a>
             </li>
             <li>
-              <a href="./">Simulation Comparisons</a>
+              <Link to="/simulation-comparisons">Simulation Comparisons</Link>
             </li>
           </ul>
           <hr className="hr-element" />
@@ -120,7 +120,7 @@ const Hero = () => {
               Completed Simulations
             </button>
           </div>
-          <div className="simulations">
+          {/* <div className="simulations">
             <Simulation
               name="Simulation 1"
               startedHoursAgo={3}
@@ -131,7 +131,7 @@ const Hero = () => {
               startedHoursAgo={1}
               progressPercentage={25}
             />
-          </div>
+          </div> */}
           <button className="new-simulation-btn">+ Start New Simulation</button>
         </div>
       </div>
