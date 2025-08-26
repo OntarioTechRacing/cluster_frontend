@@ -13,6 +13,7 @@ function App() {
           path="/simulation-comparisons"
           element={<SimulationComparison />}
         />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
