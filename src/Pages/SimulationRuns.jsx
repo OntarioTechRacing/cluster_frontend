@@ -1,9 +1,9 @@
 import React from "react";
-import MainLayout from "../Components/Simulation Runs/MainLayout";
+import MainLayout from "../components/Simulation Runs/MainLayout";
 import { Box } from "@mui/material";
-import TableSection from "../Components/Simulation Runs/Table Section/TableSection";
-import ImageSection from "../Components/Simulation Runs/Image Section/ImageSection";
-import Navbar from "../Components/NavBar/Navbar";
+import TableSection from "../components/Simulation Runs/Table Section/TableSection";
+import ImageSection from "../components/Simulation Runs/Image Section/ImageSection";
+import Navbar from "../components/NavBar/Navbar";
 
 export default function SimulationRuns() {
   return (

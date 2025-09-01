@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Navbar from "../Components/NavBar/Navbar";
-import MainLayout from "../Components/Simulation-Comparison/MainLayout";
+import Navbar from "../components/NavBar/Navbar";
+import MainLayout from "../components/Simulation-Comparison/MainLayout";
 export default function SimulationComparison() {
   return (
     <Box
