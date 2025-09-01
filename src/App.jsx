@@ -1,17 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SimulationRuns from "./Pages/SimulationRuns.jsx";
 import Hero from "./components/Hero/Hero.jsx";
-import SimulationComparison from "./Pages/SimulationComparison.jsx";
+import SimulationComparisons from "./Pages/SimulationComparisons/SimulationComparisons.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/simulation-runs" element={<SimulationRuns />} />
+        {/* <Route path="/simulation-runs" element={<SimulationRuns />} /> */}
         <Route
           path="/simulation-comparisons"
-          element={<SimulationComparison />}
+          element={<SimulationComparisons />}
         />
       </Routes>
     </BrowserRouter>
